@@ -50,27 +50,20 @@
             line-height: 1.6;
         }
         
-        .disclaimer-banner {
-            background-color: #ff6b6b;
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-            font-size: 0.9rem;
-            font-weight: 500;
-            border-bottom: 3px solid #ff3838;
+        .warning {
+            background: #fff8f8;
+            border-left: 4px solid #e60000;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+            display: flex;
+            gap: 15px;
         }
         
-        .disclaimer-banner strong {
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        .disclaimer-banner p {
-            margin: 0;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .warning i {
+            color: #e60000;
+            font-size: 1.8rem;
+            min-width: 40px;
         }
             color: var(--dark);
             background-color: var(--light);
@@ -437,11 +430,6 @@
     </style>
 </head>
 <body>
-    <!-- Disclaimer Banner -->
-    <div class="disclaimer-banner">
-        <p><strong>Important Notice:</strong> This website is NOT operated by Rocabox Inc. This page provides information about the company as a FedEx Ground partner.</p>
-    </div>
-    
     <!-- Header -->
     <header>
         <div class="container">
@@ -469,6 +457,16 @@
             <a href="#database" class="cta-button">Get FedEx ISP Database</a>
         </div>
     </section>
+
+    <!-- Warning Notice -->
+    <div class="container">
+        <div class="warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            <div>
+                <p><b>Important Notice:</b> This website is NOT operated by Rocabox Inc. This page provides information about the company as a FedEx Ground partner.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -778,5 +776,30 @@
 
 
 
+    <script>
+    // Simple animation for the cards on page load
+    document.addEventListener("DOMContentLoaded", function() {
+      const cards = document.querySelectorAll(".service-card, .feature");
+      cards.forEach((card, index) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(20px)";
+        setTimeout(() => {
+          card.style.transition = "opacity 0.5s ease, transform 0.5s ease";
+          card.style.opacity = "1";
+          card.style.transform = "translateY(0)";
+        }, 150 * index);
+      });
+
+      // Animate the warning notice
+      const warning = document.querySelector(".warning");
+      if (warning) {
+        warning.style.opacity = "0";
+        setTimeout(() => {
+          warning.style.transition = "opacity 0.8s ease";
+          warning.style.opacity = "1";
+        }, 800);
+      }
+    });
+    </script>
 </body>
 </html>
