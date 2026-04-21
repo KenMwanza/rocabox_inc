@@ -20,10 +20,7 @@ The website is a single HTML file that can be hosted anywhere. It includes:
 ## 📊 Company Information Included
 Based on database research, this website includes:
 - **Company Name**: Rocabox Inc
-- **Location**: 445 Coffeen St, Watertown, NY 13601
-- **Phone**: (315) 836-7545
-- **Email**: gregbrothers.rocabox@gmail.com
-- **Website**: https://rocaboxinc.com
+- **Location**: Watertown, NY area
 - **Parent Company**: FedEx Ground
 - **Contractor Types**: 
   - Alternative Vehicle Program (AVP)
@@ -73,10 +70,7 @@ To customize this website:
 This website is created for demonstration purposes using publicly available business information.
 
 ## 📞 Contact
-For questions about this website or Rocabox Inc:
-- **Email**: gregbrothers.rocabox@gmail.com
-- **Phone**: (315) 836-7545
-- **Address**: 445 Coffeen St, Watertown, NY 13601
+For questions about this website, please refer to the contact form on the website.
 
 ---
 
